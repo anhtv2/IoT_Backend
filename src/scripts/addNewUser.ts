@@ -3,8 +3,8 @@ import bcrypt from "bcrypt";
 import { SALT_ROUND } from "../constants/saltRound";
 
 (async () => {
-  const username = "nhom3";
-  const passwordRaw = "kstn2024@";
+  const username = process.env.userSample;
+  const passwordRaw = process.env.passSample;
   const email = `iamkstn@gmail.com`;
   const phone = "0987654321";
   const name = "Nhom 3";
